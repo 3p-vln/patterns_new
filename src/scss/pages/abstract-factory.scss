@@ -1,0 +1,32 @@
+@import "../style";
+@import "home";
+
+.page{
+  &__wrapper{
+    grid-template-columns: 200px 1fr;
+    gap: 80px;
+  }
+}
+
+#createUI{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: $orangeMain;
+  color: $font-color-white;
+  font-size: 24px;
+  font-family: Effra;
+  font-weight: 600;
+  border-radius: 16px;
+  width: 100%;
+}
+
+#osSelect{
+  display: flex;
+  padding: 20px 0;
+  width: 100%;
+  background-color: $cardBackground;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}

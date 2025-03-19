@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<load
+="src/html/components/head.htm" title="Abstract Factory" styles="abstract-factory" />
+<body>
+
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        Abstract Factory
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="container">
+      <div class="page__wrapper">
+        <div class="page__value">
+          <select id="osSelect">
+            <option value="windows">Windows</option>
+            <option value="mac">Mac</option>
+          </select>
+          <button id="createUI">Create UI</button>
+        </div>
+        <div id="uiContainer"></div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          Space Lab Vlada Novak
+        </div>
+      </div>
+    </footer>
+  </div>
+
+<script type="module" src="src/ts/abstract-factory/abstract-factory.ts"></script>
+</body>
+</html>
