@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<load
+="src/html/components/head.htm" title="Factory Method" styles="factory" />
+<body>
+
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        Factory Method
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="container">
+      <div class="page__wrapper">
+        <div class="page__filter">
+          <select id="filterSelect">
+            <option value="sale">Sale%</option>
+            <option value="vitamins">Vitamins & Dietary Supplements</option>
+            <option value="antioxidants">Antioxidants</option>
+            <option value="weight">Weight Loss</option>
+            <option value="minerals">Minerals</option>
+            <option value="probiotics">Probiotics</option>
+            <option value="pain">Pain Relief</option>
+            <option value="prenatal">Prenatal Vitamins</option>
+          </select>
+          <div class="render-btn">Filter</div>
+        </div>
+        <div class="catalog-list__content">No filtered items</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        Space Lab Vlada Novak
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script type="module" src="src/ts/factory/factory.ts"></script>
+</body>
+</html>
