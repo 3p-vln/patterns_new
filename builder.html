@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<load
+="src/html/components/head.htm" title="Builder" styles="builder" />
+<body>
+
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        Builder
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="container">
+      <div class="page__wrapper">
+        <div class="filter">
+          <div class="filter__type">
+            <label for="cardType">Choose card type:</label>
+            <select id="cardType">
+              <option value="simple">Simple</option>
+              <option value="detailed">Detailed</option>
+            </select>
+          </div>
+
+          <div class="filter__element-type">
+            <label for="elementType">Add element:</label>
+            <select id="elementType">
+              <option value="title">Title</option>
+              <option value="description">Description</option>
+              <option value="button">Button</option>
+            </select>
+
+            <label for="elementContent">Content:</label>
+            <input type="text" id="elementContent" placeholder="Enter content" />
+          </div>
+
+          <div class="filter__btns">
+            <button id="addElement">Add Element</button>
+            <button id="buildCard">Build Card</button>
+            <button id="resetCard">Reset Card</button>
+          </div>
+        </div>
+
+        <div id="cardContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        Space Lab Vlada Novak
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script type="module" src="src/ts/biilder/builder.ts"></script>
+</body>
+</html>
