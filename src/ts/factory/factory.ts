@@ -271,7 +271,7 @@ if (filter) {
         const cardContainer = renderElement('div', 'prod-card__content');
 
         const cardImg = renderElement('div', 'prod-card__img');
-        cardImg.innerHTML = `<picture><img src="${item.img}" alt="prod" /></picture>`;
+        cardImg.innerHTML = `<picture><img src="${item.img.img_default}" alt="prod" width="${item.img.img_width}" height="${item.img.img_height}" loading="lazy"/></picture>`;
 
         const cardDiscount = renderElement('div', 'prod-card__discount');
         cardDiscount.innerText = `-${item.discount}%`;

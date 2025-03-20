@@ -90,7 +90,12 @@ export interface RecommendationData {
   id: number;
   name: string;
   price: string;
-  img: string;
+  img: {
+    img_default: string;
+    img_webp: string;
+    img_height: string;
+    img_width: string;
+  };
   discount: number;
   type: string;
   description: string;
